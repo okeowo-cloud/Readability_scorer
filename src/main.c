@@ -1,5 +1,4 @@
 #include <main.h>
-#include <word_attributes2.h>
 #include <word_attributes.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -17,14 +16,14 @@
 
 void menu(char *text)
 {
-    const char* options[] = {"CL", "AR", "FK", "SM", "!!"};
+    const char* options[] = {"CL", "AR", "!!"};
     char input[3];
     input[1] = 'a';
     input[2] = 'b';
     input[3] = '\0';
     while (strcmp(input, "!!") != 0)
     {
-	printf("Please enter the score you want to calculate (CL, AR, FK, SM, !!->exit from program): ");
+	printf("Please enter the score you want to calculate (CL, AR, !!->exit from program): ");
 	int ch;
 	/*while (i < 2 && (ch = getchar()) != '\n') {
 		input[i] = ch;
@@ -55,14 +54,6 @@ void menu(char *text)
                		printf("The score of this text based on Automated Readability is: %lf\n", ar_score);
 			break;
 		case 2:
-			double fk_score = getFleschScore(text);
-               		printf("The score of this text based on Flesch Kincaid is: %lf\n", fk_score);
-			break;
-		case 3:
-			double sm_score = getSmogScore(text);
-               		printf("The score of this text based on SMOG Readability is: %lf\n", sm_score);
-			break;
-		case 4:
 			printf("Okay Bye!\n");
 			break;
 		default:

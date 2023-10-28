@@ -21,16 +21,39 @@ This project is a Readability Scorer that assesses the readability of a given te
 To get started with the Readability Scorer, follow these steps:
 
 1. Clone the repository:
+```
 git clone https://github.com/okeowo-cloud/Readability_scorer.git
-
-2. Build the project using CMake:
+```
+2. Build the project using CMake and Make:
+```
 cd Readability_scorer
-cmake .
+cmake . -B Build
+cd Build
 make
-
-3. Run the program to analyze a text file.
+```
+4. Run the program to analyze a text file.
+```
+chmod a+x run.sh
 ./run.sh example.txt
+```
 
+## Docker
+To run the Readability Scorer using Docker, follow these steps:
+
+1. Clone the repository:
+```
+git clone https://github.com/okeowo-cloud/Readability_scorer.git
+```
+2. Build the Docker image for the project:
+```
+cd Readability_scorer
+docker build -t readability-scorer .
+```
+3. Run the program to analyze a text file:
+```
+chmod a+x run.sh
+./run.sh example.txt
+```
 
 ## Usage
 

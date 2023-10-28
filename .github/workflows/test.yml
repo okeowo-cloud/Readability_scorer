@@ -12,7 +12,5 @@ jobs:
     - name: Clone Repo
       uses: actions/checkout@v2
 
-    - run: ls
-    
-    # - name: Build project
-    #   uses: make all
+    - name: Create a Docker container
+      run: docker build -t rs_v01 . --target app_run_test

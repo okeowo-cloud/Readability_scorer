@@ -12,7 +12,7 @@ jobs:
     - name: Clone Repo
       uses: actions/checkout@v2
 
-    - uses: ls
+    - run: ls
     
     # - name: Build project
     #   uses: make all

@@ -1,5 +1,6 @@
 #include <main.h>
 #include <word_attributes.h>
+#include <word_attributes2.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -16,7 +17,7 @@
 
 void menu(char *text)
 {
-    const char* options[] = {"CL", "AR", "!!"};
+    const char* options[] = {"CL", "AR","FK","SM", "!!"};
     char input[3];
     input[1] = 'a';
     input[2] = 'b';
@@ -54,6 +55,15 @@ void menu(char *text)
                		printf("The score of this text based on Automated Readability is: %lf\n", ar_score);
 			break;
 		case 2:
+   			double fk_score = getFleschScore(text);
+                 	printf("The score of this text based on Flesch Kincaid is: %lf\n", fk_score);
+   			break;
+  		case 3:
+   			double sm_score = getSmogScore(text);
+                	printf("The score of this text based on SMOG Readability is: %lf\n", sm_score);
+   			break;
+
+		case 4:
 			printf("Okay Bye!\n");
 			break;
 		default:

@@ -12,19 +12,19 @@ FROM base as app_build
 
 RUN cmake . -B Build
 
-FROM app_build as app_run_test
-
-RUN make test
-
-from app_build as app_build_project
+FROM app_build as app_build_project
 
 WORKDIR /app/Build
 
 RUN make
 
-FROM app_build_project as app_run_project
+FROM app_build_project as app_run_test
 
 WORKDIR /app
+
+RUN make all
+
+FROM app_run_test as app_run_project
 
 COPY $PWD/run.sh /bin
 

@@ -34,18 +34,18 @@ To get started with the Readability Scorer, follow these steps:
 git clone https://github.com/okeowo-cloud/Readability_scorer.git
 ```
 
-2. Build the project using CMake and Make:
+2. Install dependencies
 ```
-cd Readability_scorer
-cmake . -B Build
-cd Build
-make
+./prereqs.sh
 ```
 
-3. Run the program to analyze a text file.
+3. Build the project using CMake and Make:
 ```
-cd ..
-chmod a+x run.sh
+./build.sh
+```
+
+4. Run the program to analyze a text file.
+```
 ./run.sh example.txt
 ```
 

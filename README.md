@@ -13,8 +13,11 @@ This project is a Readability Scorer that assesses the readability of a given te
 
 - Calculate readability scores using different formulas such as:
 > [SMOG (Simple Measure of Gobbledygook)](https://en.wikipedia.org/wiki/SMOG)
+
 > [Coleman Liau Index](https://en.wikipedia.org/wiki/Coleman%E2%80%93Liau_index)
+
 > [Flesch-Kincaid Grade level](https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests)
+
 > [Automated Readability Index](https://en.wikipedia.org/wiki/Automated_readability_index)
 
 - Command-line interface for easy text analysis.
@@ -61,8 +64,7 @@ docker build -t readability-scorer .
 
 3. Run the program to analyze a text file:
 ```
-chmod a+x run.sh
-./run.sh example.txt
+docker run -it readability-scorer example.txt
 ```
 NB: example.txt file is a static file present within the container for running the program.
 To provide a file dynamically for the container to run the program, you need to Mount either a directory containing your files or Mount a file.

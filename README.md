@@ -26,6 +26,7 @@ This project is a Readability Scorer that assesses the readability of a given te
 
 ## Getting Started
 
+### On Linux Machine
 To get started with the Readability Scorer, follow these steps:
 
 1. Clone the repository:
@@ -48,7 +49,7 @@ chmod a+x run.sh
 ./run.sh example.txt
 ```
 
-## With Docker
+### With Docker
 To run the Readability Scorer using Docker, follow these steps:
 
 1. Clone the repository:

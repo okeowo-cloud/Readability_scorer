@@ -48,6 +48,10 @@ git clone https://github.com/okeowo-cloud/Readability_scorer.git
 ```
 ./run.sh example.txt
 ```
+5. To Run the program tests.
+```
+./test.sh
+```
 
 ### With Docker
 To run the Readability Scorer using Docker, follow these steps:

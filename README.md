@@ -12,10 +12,10 @@ This project is a Readability Scorer that assesses the readability of a given te
 ## Features
 
 - Calculate readability scores using different formulas such as:
-	> [SMOG (Simple Measure of Gobbledygook)](https://en.wikipedia.org/wiki/SMOG).
-	> [Coleman Liau Index](https://en.wikipedia.org/wiki/Coleman%E2%80%93Liau_index)
-	> [Flesch-Kincaid Grade level](https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests)
-	> [Automated Readability Index](https://en.wikipedia.org/wiki/Automated_readability_index)
+> [SMOG (Simple Measure of Gobbledygook)](https://en.wikipedia.org/wiki/SMOG)
+> [Coleman Liau Index](https://en.wikipedia.org/wiki/Coleman%E2%80%93Liau_index)
+> [Flesch-Kincaid Grade level](https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests)
+> [Automated Readability Index](https://en.wikipedia.org/wiki/Automated_readability_index)
 
 - Command-line interface for easy text analysis.
 - Input text from files.

@@ -24,7 +24,7 @@ void menu(char *text)
     input[3] = '\0';
     while (strcmp(input, "!!") != 0)
     {
-	printf("Please enter the score you want to calculate (CL, AR, !!->exit from program): ");
+	printf("Please enter the score you want to calculate (CL, AR, FK, SM !!->exit from program): ");
 	int ch;
 	/*while (i < 2 && (ch = getchar()) != '\n') {
 		input[i] = ch;
@@ -56,7 +56,7 @@ void menu(char *text)
 			break;
 		case 2:
    			double fk_score = getFleschScore(text);
-                 	printf("The score of this text based on Flesch Kincaid is: %lf\n", fk_score);
+                 	printf("The score of this text based on Flesch-Kincaid is: %lf\n", fk_score);
    			break;
   		case 3:
    			double sm_score = getSmogScore(text);

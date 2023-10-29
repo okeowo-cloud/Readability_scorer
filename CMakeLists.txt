@@ -17,7 +17,7 @@ target_include_directories(READ_FUNC_LIB PUBLIC
 )
 
 set(EXECUTABLE_FILE
-    Readability_scorer
+	"readability_scorer"
 )
 
 add_executable(${EXECUTABLE_FILE} src/main.c)
@@ -27,5 +27,8 @@ target_include_directories(${EXECUTABLE_FILE} PUBLIC
     "include"
 )
 
+# link built shared library from src
 target_link_libraries(${EXECUTABLE_FILE} READ_FUNC_LIB)
+
+# link external math library
 target_link_libraries(${EXECUTABLE_FILE} m)

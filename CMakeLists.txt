@@ -7,6 +7,9 @@ add_library(READ_FUNC_LIB SHARED
     src/add.c
     src/coleman.c
     src/auto_readability.c
+    src/word_attributes2.c
+    src/smog.c
+    src/fleschkincaid.c
 )
 
 target_include_directories(READ_FUNC_LIB PUBLIC
@@ -25,3 +28,4 @@ target_include_directories(${EXECUTABLE_FILE} PUBLIC
 )
 
 target_link_libraries(${EXECUTABLE_FILE} READ_FUNC_LIB)
+target_link_libraries(${EXECUTABLE_FILE} m)

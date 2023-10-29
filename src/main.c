@@ -96,6 +96,7 @@ int main(int argc, char *argv[])
 	
 	if (readTextFromFile(argv[1], text, sizeof(text))) {
 		displayWordAttributes(text);
+		displayWordAttributes2(text);
 	} else {
 		return (1);  // Exit with an error code
 	}

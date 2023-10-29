@@ -1,6 +1,6 @@
-.PHONY: all clean test
-all: test clean 
-test:
+.PHONY: clean test tests
+test: tests clean 
+tests:
 	python3 -m unittest test/*.py
 
 #%.o: %.c %.h
